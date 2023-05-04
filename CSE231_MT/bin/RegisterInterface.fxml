@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registercontroller">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="618.0">
+         <left>
+            <VBox alignment="CENTER_LEFT" prefHeight="518.0" prefWidth="478.0" style="-fx-padding: 30;">
+               <children>
+                  <Label text="ID">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ID" prefHeight="26.0" prefWidth="475.0" />
+                  <Label text="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="Password" />
+                  <Label text="Type">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="ReaderType" lineSpacing="20.0" mnemonicParsing="false" text="Reader" />
+                  <CheckBox fx:id="LibrarianType" lineSpacing="20.0" mnemonicParsing="false" text="Librarian" />
+                  <Label text="First name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="FirstName" />
+                  <Label text="Last name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="LastName" />
+                  <Label text="Address">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Address" />
+                  <Label text="Cellphone">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Cellphone" />
+                  <Label text="E-mail">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Email" />
+               </children>
+            </VBox>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="57.0" prefWidth="920.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="RegisterBTN" layoutX="283.0" layoutY="16.0" mnemonicParsing="false" onAction="#RegisterBTNClicked" text="Register Now" />
+                  <Button fx:id="ReturnBTN" layoutX="500.0" layoutY="16.0" mnemonicParsing="false" onAction="#ReturnBTNClicked" text="Return" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="72.0" prefWidth="618.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="33.0" layoutY="28.0" text="Enter your credentials to create a new account" wrapText="true">
+                     <font>
+                        <Font name="Calisto MT" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </content>
+</ScrollPane>
