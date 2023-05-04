@@ -60,6 +60,16 @@ public class registercontroller {
         else {
             Reader.addReader(id , password , firstname , lastname , address , cellphone , email);
         }
+
+        ID.clear();
+        Password.clear();
+        FirstName.clear();
+        LastName.clear();
+        Address.clear();
+        Cellphone.clear();
+        Email.clear();
+        LibrarianType.setSelected(false);
+        ReaderType.setSelected(false);
     }
 
     @FXML
